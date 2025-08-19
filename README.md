@@ -1,1 +1,1 @@
-# relay-resolvers-example
+# relay-resolvers-derived-fields-example
