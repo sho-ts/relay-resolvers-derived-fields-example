@@ -1,6 +1,15 @@
-import { Environment, Network, type FetchFunction } from 'relay-runtime';
+import { Environment, Network, RecordSource, type FetchFunction } from 'relay-runtime';
+import RelayModernStore from "relay-runtime/lib/store/RelayModernStore";
+import type { RelayFieldLoggerEvent } from 'relay-runtime/lib/store/RelayStoreTypes';
 
 const HTTP_ENDPOINT = 'http://localhost:3000/graphql';
+
+const fieldLogger =(event: RelayFieldLoggerEvent) => {
+  if(event.kind === "relay_resolver.error") {
+    console.warn(`Resolver error encountered in ${event.owner}.${event.fieldPath}`)
+    console.warn(event.error)
+  }
+}
 
 const fetchGraphQL: FetchFunction = async (request, variables) => {
   const resp = await fetch(HTTP_ENDPOINT, {
@@ -16,4 +25,6 @@ const fetchGraphQL: FetchFunction = async (request, variables) => {
 
 export const relayEnvironment = new Environment({
   network: Network.create(fetchGraphQL),
+  store: new RelayModernStore(new RecordSource()),
+  relayFieldLogger: fieldLogger,
 });
