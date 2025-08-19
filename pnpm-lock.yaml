@@ -60,11 +60,11 @@ importers:
         specifier: ^6.0.0
         version: 6.0.0(react@19.1.0)
       react-relay:
-        specifier: ^20.0.0
-        version: 20.0.0(react@19.1.0)
+        specifier: 20.1.1
+        version: 20.1.1(react@19.1.0)
       relay-runtime:
-        specifier: ^20.0.0
-        version: 20.0.0
+        specifier: 20.1.1
+        version: 20.1.1
     devDependencies:
       '@eslint/js':
         specifier: ^9.30.1
@@ -76,10 +76,10 @@ importers:
         specifier: ^19.1.6
         version: 19.1.6(@types/react@19.1.8)
       '@types/react-relay':
-        specifier: ^18.2.1
+        specifier: 18.2.1
         version: 18.2.1
       '@types/relay-runtime':
-        specifier: ^19.0.2
+        specifier: 19.0.2
         version: 19.0.2
       '@vitejs/plugin-react':
         specifier: ^4.6.0
@@ -97,8 +97,8 @@ importers:
         specifier: ^16.3.0
         version: 16.3.0
       relay-compiler:
-        specifier: ^20.0.0
-        version: 20.0.0
+        specifier: 20.1.1
+        version: 20.1.1
       typescript:
         specifier: ~5.8.3
         version: 5.8.3
@@ -1460,8 +1460,8 @@ packages:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
 
-  react-relay@20.0.0:
-    resolution: {integrity: sha512-4Fm3xs8TmCh0B8zargSIWjU6Mdf3AFf4epTboZBHwyN0xDynF53PsiiCgbP5WRAd63oC54T+TF4MrTXdc4VYIw==}
+  react-relay@20.1.1:
+    resolution: {integrity: sha512-pwl7wHHXCOx32dOg4TVNkhVojgGVvOBMo9pcMGeM1BIFYvmwGauKTtBB+qr5buXHGooCL8TXjMVg+ZLizIsbeQ==}
     peerDependencies:
       react: ^16.9.0 || ^17 || ^18 || ^19
 
@@ -1469,12 +1469,12 @@ packages:
     resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
     engines: {node: '>=0.10.0'}
 
-  relay-compiler@20.0.0:
-    resolution: {integrity: sha512-SnsN9/Yjh5kmZbt91Wr70xv3VKORRHx3W4cB+yhz9FpzStlI7qkB9jDlGkvUa6hICZ+rbIooe7OekejjSQ2j5Q==}
+  relay-compiler@20.1.1:
+    resolution: {integrity: sha512-J/FFFLS/3vnbDkyQMw8l3Ev7dNHXMgC1RAs0fITz4Q63TFPOw142knKxY1Mm5ZZBABkAs9g2JghXaqM+phwTxw==}
     hasBin: true
 
-  relay-runtime@20.0.0:
-    resolution: {integrity: sha512-GwS4WbJZSxfut1nJRCcUVWfOwl6TZ2dWFlb4s8vX0S6/EBLlAKxi5YKOejFe302JVCGp/YbXhezYAY21L6AsGw==}
+  relay-runtime@20.1.1:
+    resolution: {integrity: sha512-N98ZkkyuIHdXmHaPuljihM1QbFYXATF0gxA0CESFphszsQzXs9A/zZloVfzdOI/xg3B3CfM/5nozvIoeTDIcfw==}
 
   resolve-from@3.0.0:
     resolution: {integrity: sha512-GnlH6vxLymXJNMBo7XP1fJIzBFbdYt49CuTwmB/6N53t+kMPRMFKz783LlQ4tv28XoQfMWinAJX6WCGf2IlaIw==}
@@ -2976,22 +2976,22 @@ snapshots:
 
   react-refresh@0.17.0: {}
 
-  react-relay@20.0.0(react@19.1.0):
+  react-relay@20.1.1(react@19.1.0):
     dependencies:
       '@babel/runtime': 7.27.6
       fbjs: 3.0.5
       invariant: 2.2.4
       nullthrows: 1.1.1
       react: 19.1.0
-      relay-runtime: 20.0.0
+      relay-runtime: 20.1.1
     transitivePeerDependencies:
       - encoding
 
   react@19.1.0: {}
 
-  relay-compiler@20.0.0: {}
+  relay-compiler@20.1.1: {}
 
-  relay-runtime@20.0.0:
+  relay-runtime@20.1.1:
     dependencies:
       '@babel/runtime': 7.27.6
       fbjs: 3.0.5
