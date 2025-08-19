@@ -1,0 +1,20 @@
+schema {
+  query: Query
+}
+
+scalar DateTime
+
+interface Node {
+  id: ID!
+}
+
+type Query {
+  node(id: ID!): Node
+  nodes(ids: [ID!]!): [Node]!
+}
+
+type User implements Node {
+  id: ID!
+  lastLoginAt: DateTime
+  name: String
+}
