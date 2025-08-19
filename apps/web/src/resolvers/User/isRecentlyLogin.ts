@@ -21,7 +21,7 @@ export const isRecentlyLogin = (
     key
   );
 
-  // lastLoginAtが存在しない場合は何も返さない
+  // lastLoginAtが存在しない場合はundefinedを返す
   if (!node.lastLoginAt) {
     return undefined;
   }
